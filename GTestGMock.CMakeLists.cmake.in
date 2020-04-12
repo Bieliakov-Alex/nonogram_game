@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10.0)
+
+project(${NONOGRAM_PROJECT}-download NONE)
+
+include(ExternalProject)
+ExternalProject_Add(${NONOGRAM_PROJECT}-download
+                    GIT_REPOSITORY ${NONOGRAM_GIT_REPOSITORY}
+                    GIT_TAG ${NONOGRAM_GIT_TAG}
+                    ${UPDATE_DISCONNECTED_IF_AVAILABLE}
+                    SOURCE_DIR "${NONOGRAM_SOURCE_DIR}"
+                    BINARY_DIR "${NONOGRAM_BINARY_DIR}"
+                    CONFIGURE_COMMAND   ""
+                    BUILD_COMMAND       ""
+                    INSTALL_COMMAND     ""
+                    TEST_COMMAND        ""
+)
