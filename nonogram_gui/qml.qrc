@@ -1,0 +1,14 @@
+<RCC>
+        <qresource prefix="/">
+                   <file>resources/main.qml</file>
+                   <file>resources/NonogramDelegate.qml</file>
+                   <file>resources/NonogramCanvas.qml</file>
+                   <file>resources/ColumnNumbersDelegate.qml</file>
+                   <file>resources/RowNumbersDelegate.qml</file>
+                   <file>resources/NonogramRectDelegate.qml</file>
+                   <file>resources/ColumnNumbersRectangle.qml</file>
+                   <file>resources/NonogramFieldRectangle.qml</file>
+                   <file>resources/RowNumbersRectangle.qml</file>
+                   <file>resources/scripts.js</file>
+        </qresource>
+</RCC>
