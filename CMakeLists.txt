@@ -12,3 +12,4 @@ include(DownloadGTestGMock.cmake)
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 
 add_subdirectory(nonogram)
+add_subdirectory(nonogram_gui)

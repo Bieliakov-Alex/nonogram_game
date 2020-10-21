@@ -49,6 +49,22 @@ void Nonogram::SetNonogramCellState(const uint8_t row, const uint8_t column,
     throw std::runtime_error("The value of row or(and) column is not correct.");
   } else {
     field_[row][column] = state;
+    std::string state_string = "";
+    switch (state) {
+    case NonogramCellState::kMarked:
+      state_string = "Marked";
+      break;
+    case NonogramCellState::kCrossed:
+      state_string = "Crossed";
+      break;
+    case NonogramCellState::kEmpty:
+      state_string = "Empty";
+      break;
+    default:
+      state_string = "Unknown";
+    }
+    log_->LogInfo("New state of the cell (" + std::to_string(row) + "," +
+                  std::to_string(column) + ") is: " + state_string);
   }
   return;
 }
